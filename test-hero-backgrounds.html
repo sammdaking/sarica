@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Background Test</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Debug styles */
+      .hero {
+        border: 2px solid red !important;
+      }
+      .hero .container {
+        border: 2px solid blue !important;
+      }
+      .hero-content {
+        border: 2px solid green !important;
+      }
+      .hero-cards {
+        border: 2px solid yellow !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <main>
+      <section class="hero bireysel-bg" id="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title" id="hero-title">
+              Her alanda,<br />
+              Her anında sigorta.
+            </h1>
+
+            <a href="#quote" class="btn-primary" id="hero-cta">
+              <span>Hemen Teklif Al</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom Cards -->
+        <div class="hero-cards">
+          <div class="hero-card active" data-section="bireysel">
+            <h3 class="card-title">BİREYSEL</h3>
+          </div>
+          <div class="hero-card" data-section="isyerim">
+            <h3 class="card-title">İŞ YERİM</h3>
+          </div>
+          <div class="hero-card" data-section="rehber">
+            <h3 class="card-title">SİGORTA REHBERİ</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/components.js"></script>
+    <script src="js/mobile-menu-fix.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      // Test script
+      console.log("Hero background test loaded");
+
+      // Test background changes after page load
+      setTimeout(() => {
+        console.log("Testing background changes...");
+
+        const cards = document.querySelectorAll(".hero-card");
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            console.log(`Clicking card: ${card.getAttribute("data-section")}`);
+            card.click();
+          }, index * 2000);
+        });
+      }, 2000);
+    </script>
+  </body>
+</html>

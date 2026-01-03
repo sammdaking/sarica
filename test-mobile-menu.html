@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Menu Test</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/mobile-menu-fix.js"></script>
+
+    <script>
+      // Additional debug
+      window.addEventListener("load", function () {
+        console.log("Window loaded - Final check");
+        setTimeout(function () {
+          const dropdowns = document.querySelectorAll(
+            ".has-dropdown, .has-mega-menu"
+          );
+          console.log("Final dropdown count:", dropdowns.length);
+
+          dropdowns.forEach((item, index) => {
+            const link = item.querySelector(".nav-link");
+            console.log(
+              `Final dropdown ${index}:`,
+              link ? link.textContent.trim() : "No link found"
+            );
+          });
+
+          // Test click programmatically
+          if (dropdowns.length > 0) {
+            console.log("Testing first dropdown click...");
+            const firstLink = dropdowns[0].querySelector(".nav-link");
+            if (firstLink) {
+              firstLink.click();
+            }
+          }
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
