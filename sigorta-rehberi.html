@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Sigorta rehberi - Sigorta türleri, kapsamları ve önemli bilgiler"
+      content="Sigorta rehberi - Sigorta türleri, kapsamları ve önemli bilgiler. Kasko, konut, sağlık sigortası hakkında detaylı bilgiler."
     />
     <title>Sigorta Rehberi - Levent Sarıcaoğlu Sigorta</title>
 
@@ -17,6 +17,18 @@
       rel="stylesheet"
     />
 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -25,39 +37,319 @@
     <div id="header-placeholder"></div>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <section class="rehber-page-header">
       <div class="container">
-        <h1 class="page-title">Sigorta Rehberi</h1>
-        <div class="page-divider"></div>
+        <h1 class="rehber-page-title">Sigorta Rehberi</h1>
       </div>
     </section>
 
-    <!-- Guide Content -->
-    <section class="guide-content">
+    <!-- Guide Hero Section -->
+    <section class="guide-hero-section">
       <div class="container">
-        <div class="guide-grid">
-          <div class="guide-item">
-            <h3>Kasko Sigortası Nedir?</h3>
-            <p>
-              Kasko sigortası, aracınızın çeşitli risklere karşı korunmasını
-              sağlayan sigorta türüdür.
-            </p>
+        <div class="section-tag">REHBERİMİZ</div>
+        <div class="guide-hero-content">
+          <h2 class="guide-hero-title">
+            Your Complete Guide to
+            <span class="highlight">Insurance Protection</span>
+          </h2>
+          <p class="guide-hero-desc">
+            Navigate the world of insurance with confidence. Our comprehensive
+            guide helps you understand different types of coverage, make
+            informed decisions, and find the perfect protection for your needs.
+          </p>
+          <div class="guide-stats">
+            <div class="guide-stat">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Sigorta Türü</div>
+            </div>
+            <div class="guide-stat">
+              <div class="stat-number">100+</div>
+              <div class="stat-label">Rehber Makalesi</div>
+            </div>
+            <div class="guide-stat">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Uzman Desteği</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Insurance Categories -->
+    <section class="insurance-categories-section">
+      <div class="container">
+        <div class="section-tag">SİGORTA TÜRLERİ</div>
+        <h2 class="categories-title">Sigorta Türleri Rehberi</h2>
+
+        <div class="categories-grid">
+          <!-- Araç Sigortaları -->
+          <div class="category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-car"></i>
+              </div>
+              <h3>Araç Sigortaları</h3>
+            </div>
+            <div class="category-content">
+              <div class="guide-item">
+                <h4>Kasko Sigortası</h4>
+                <p>
+                  Aracınızı çarpışma, çalınma, yangın ve doğal afetlere karşı
+                  korur.
+                </p>
+                <ul>
+                  <li>Tam Kasko kapsamı</li>
+                  <li>Kısmi Kasko seçenekleri</li>
+                  <li>Muafiyet tutarları</li>
+                  <li>Yedek parça garantisi</li>
+                </ul>
+                <a href="#kasko-detay" class="guide-link">Detaylı Bilgi</a>
+              </div>
+
+              <div class="guide-item">
+                <h4>Zorunlu Trafik Sigortası</h4>
+                <p>
+                  Yasal zorunluluk olan trafik sigortası hakkında bilmeniz
+                  gerekenler.
+                </p>
+                <ul>
+                  <li>Yasal zorunluluklar</li>
+                  <li>Teminat kapsamı</li>
+                  <li>Prim hesaplama</li>
+                  <li>Bonus-malus sistemi</li>
+                </ul>
+                <a href="#trafik-detay" class="guide-link">Detaylı Bilgi</a>
+              </div>
+            </div>
           </div>
 
-          <div class="guide-item">
-            <h3>Konut Sigortası Kapsamı</h3>
-            <p>
-              Konut sigortası, evinizi yangın, hırsızlık ve doğal afetlere karşı
-              korur.
-            </p>
+          <!-- Konut Sigortaları -->
+          <div class="category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <h3>Konut Sigortaları</h3>
+            </div>
+            <div class="category-content">
+              <div class="guide-item">
+                <h4>Konut Sigortası</h4>
+                <p>Evinizi ve eşyalarınızı çeşitli risklere karşı koruyun.</p>
+                <ul>
+                  <li>Yangın teminatı</li>
+                  <li>Hırsızlık koruması</li>
+                  <li>Doğal afet kapsamı</li>
+                  <li>Eşya sigortası</li>
+                </ul>
+                <a href="#konut-detay" class="guide-link">Detaylı Bilgi</a>
+              </div>
+
+              <div class="guide-item">
+                <h4>DASK (Deprem Sigortası)</h4>
+                <p>Zorunlu deprem sigortası hakkında önemli bilgiler.</p>
+                <ul>
+                  <li>DASK zorunluluğu</li>
+                  <li>Teminat limitleri</li>
+                  <li>Prim hesaplama</li>
+                  <li>Hasar süreçleri</li>
+                </ul>
+                <a href="#dask-detay" class="guide-link">Detaylı Bilgi</a>
+              </div>
+            </div>
           </div>
 
-          <div class="guide-item">
-            <h3>Sağlık Sigortası Avantajları</h3>
-            <p>
-              Sağlık sigortası ile sağlık harcamalarınızı güvence altına
-              alabilirsiniz.
-            </p>
+          <!-- Sağlık Sigortaları -->
+          <div class="category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <h3>Sağlık Sigortaları</h3>
+            </div>
+            <div class="category-content">
+              <div class="guide-item">
+                <h4>Tamamlayıcı Sağlık Sigortası</h4>
+                <p>SGK'ya ek olarak sağlık harcamalarınızı karşılayın.</p>
+                <ul>
+                  <li>Muayene ve tedavi</li>
+                  <li>Ameliyat masrafları</li>
+                  <li>İlaç giderleri</li>
+                  <li>Diş tedavisi</li>
+                </ul>
+                <a href="#tss-detay" class="guide-link">Detaylı Bilgi</a>
+              </div>
+
+              <div class="guide-item">
+                <h4>Özel Sağlık Sigortası</h4>
+                <p>Kapsamlı sağlık koruması için özel sigorta seçenekleri.</p>
+                <ul>
+                  <li>Özel hastane ağı</li>
+                  <li>Check-up hizmetleri</li>
+                  <li>Yurtdışı tedavi</li>
+                  <li>Acil durum kapsamı</li>
+                </ul>
+                <a href="#oss-detay" class="guide-link">Detaylı Bilgi</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diğer Sigortalar -->
+          <div class="category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Diğer Sigortalar</h3>
+            </div>
+            <div class="category-content">
+              <div class="guide-item">
+                <h4>Seyahat Sigortası</h4>
+                <p>Yurt içi ve yurt dışı seyahatlerinizde güvende olun.</p>
+                <ul>
+                  <li>Sağlık masrafları</li>
+                  <li>Bagaj kaybı</li>
+                  <li>Seyahat iptali</li>
+                  <li>Acil durum desteği</li>
+                </ul>
+                <a href="#seyahat-detay" class="guide-link">Detaylı Bilgi</a>
+              </div>
+
+              <div class="guide-item">
+                <h4>Ferdi Kaza Sigortası</h4>
+                <p>Beklenmedik kazalara karşı kendinizi koruyun.</p>
+                <ul>
+                  <li>Ölüm teminatı</li>
+                  <li>Sürekli sakatlık</li>
+                  <li>Tedavi masrafları</li>
+                  <li>Günlük tazminat</li>
+                </ul>
+                <a href="#ferdi-kaza-detay" class="guide-link">Detaylı Bilgi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-tag">S.S.S.</div>
+        <h2 class="faq-title">Sıkça Sorulan Sorular</h2>
+
+        <div class="faq-grid">
+          <div class="faq-category">
+            <h3>Genel Sorular</h3>
+            <div class="faq-accordion">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h4>Sigorta neden gereklidir?</h4>
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Sigorta, beklenmedik risklere karşı finansal koruma sağlar.
+                    Hasarlar durumunda büyük maddi kayıpları önler ve
+                    geleceğinizi güvence altına alır.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h4>Hangi sigortalar zorunludur?</h4>
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Türkiye'de zorunlu trafik sigortası, DASK (deprem sigortası)
+                    ve işveren mali mesuliyet sigortası yasal zorunluluktur.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h4>Sigorta primini etkileyen faktörler nelerdir?</h4>
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Yaş, cinsiyet, meslek, geçmiş hasar durumu, araç modeli,
+                    konut konumu gibi faktörler sigorta primini etkiler.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-category">
+            <h3>Hasar Süreçleri</h3>
+            <div class="faq-accordion">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h4>Hasar durumunda ne yapmalıyım?</h4>
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Derhal sigorta şirketini arayın, gerekli belgeleri toplayın
+                    ve hasar ihbar sürecini başlatın. Acil durumlarda önce
+                    güvenliğinizi sağlayın.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h4>Hasar ödemesi ne kadar sürer?</h4>
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Hasar türüne göre değişir. Basit hasarlar 7-15 gün, karmaşık
+                    hasarlar 30-60 gün sürebilir. Ekspertiz süreci önemli
+                    faktördür.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h4>Muafiyet nedir?</h4>
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Muafiyet, hasar durumunda sigortalının kendisinin ödeyeceği
+                    tutardır. Yüksek muafiyet seçimi primi düşürür.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="guide-cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Hala Sorularınız mı Var?</h2>
+          <p>
+            Uzman ekibimiz size en uygun sigorta çözümünü bulmak için burada.
+            Ücretsiz danışmanlık için hemen iletişime geçin.
+          </p>
+          <div class="cta-buttons">
+            <a href="iletisim.html" class="btn-cta-primary">
+              <span>Ücretsiz Danışmanlık</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="tel:+905559982185" class="btn-cta-secondary">
+              <i class="fas fa-phone"></i>
+              <span>Hemen Ara</span>
+            </a>
           </div>
         </div>
       </div>
@@ -65,7 +357,7 @@
 
     <!-- WhatsApp Button -->
     <a
-      href="https://wa.me/905xxxxxxxxx"
+      href="https://wa.me/905559982185"
       class="whatsapp-btn"
       target="_blank"
       aria-label="WhatsApp ile iletişime geç"
@@ -81,8 +373,12 @@
     <div id="footer-placeholder"></div>
 
     <!-- JavaScript -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="js/components.js"></script>
     <script src="js/mobile-menu-fix.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/sigorta-rehberi.js"></script>
   </body>
 </html>

@@ -17,6 +17,18 @@
       rel="stylesheet"
     />
 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -25,146 +37,72 @@
     <div id="header-placeholder"></div>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <section class="sigortalar-page-header">
       <div class="container">
-        <h1 class="page-title">Sigortalarımız</h1>
-        <div class="page-divider"></div>
+        <h1 class="sigortalar-page-title">Sigortalarımız</h1>
       </div>
     </section>
 
-    <!-- Insurance Categories -->
-    <section class="insurance-categories">
+    <!-- Insurance Categories Grid -->
+    <section class="sigortalar-categories">
       <div class="container">
-        <div class="insurance-grid">
+        <div class="sigortalar-grid">
           <!-- Kasko Sigortası -->
-          <div class="insurance-card" id="kasko">
-            <div class="insurance-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                <polyline points="9,22 9,12 15,12 15,22" />
-              </svg>
-            </div>
-            <h3 class="insurance-title">Kasko Sigortası</h3>
+          <div class="sigorta-card">
+            <i class="fas fa-car sigorta-icon"></i>
+            <h3 class="sigorta-title">Kasko Sigortası</h3>
           </div>
 
           <!-- Zorunlu Trafik Sigortası -->
-          <div class="insurance-card" id="trafik">
-            <div class="insurance-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12,6 12,12 16,14" />
-              </svg>
-            </div>
-            <h3 class="insurance-title">Zorunlu Trafik Sigortası</h3>
+          <div class="sigorta-card">
+            <i class="fas fa-exclamation-triangle sigorta-icon"></i>
+            <h3 class="sigorta-title">Zorunlu Trafik Sigortası</h3>
           </div>
 
           <!-- Konut & DASK -->
-          <div class="insurance-card" id="konut">
-            <div class="insurance-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-              </svg>
-            </div>
-            <h3 class="insurance-title">Konut & DASK</h3>
+          <div class="sigorta-card">
+            <i class="fas fa-home sigorta-icon"></i>
+            <h3 class="sigorta-title">Konut & DASK</h3>
           </div>
 
           <!-- Tamamlayıcı Sağlık -->
-          <div class="insurance-card" id="saglik">
-            <div class="insurance-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-              </svg>
-            </div>
-            <h3 class="insurance-title">Tamamlayıcı Sağlık</h3>
+          <div class="sigorta-card">
+            <i class="fas fa-heart sigorta-icon"></i>
+            <h3 class="sigorta-title">Tamamlayıcı Sağlık</h3>
           </div>
 
           <!-- Özel Sağlık Sigortası -->
-          <div class="insurance-card" id="ozel-saglik">
-            <div class="insurance-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
-                />
-                <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-              </svg>
-            </div>
-            <h3 class="insurance-title">Özel Sağlık Sigortası</h3>
+          <div class="sigorta-card">
+            <i class="fas fa-user-md sigorta-icon"></i>
+            <h3 class="sigorta-title">Özel Sağlık Sigortası</h3>
           </div>
 
           <!-- Seyahat & Ferdi Kaza -->
-          <div class="insurance-card" id="seyahat">
-            <div class="insurance-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
-            </div>
-            <h3 class="insurance-title">Seyahat & Ferdi Kaza</h3>
+          <div class="sigorta-card">
+            <i class="fas fa-plane sigorta-icon"></i>
+            <h3 class="sigorta-title">Seyahat & Ferdi Kaza</h3>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Insurance Brands Section -->
-    <section class="insurance-brands">
+    <section class="sigorta-brands">
       <div class="container">
-        <h2 class="section-title">Sigorta Branşları</h2>
-        <div class="section-divider"></div>
+        <h2 class="brands-title">Sigorta Branşları</h2>
 
         <div class="brands-grid">
-          <!-- Araç Sigortaları -->
+          <!-- Araç Sigortaları - Large Card -->
           <div class="brand-card large-card">
             <div class="brand-image">
               <img
-                src="assets/images/arac-sigortasi.jpg"
+                src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                 alt="Araç Sigortaları"
               />
             </div>
             <div class="brand-overlay">
               <h3 class="brand-title">Araç Sigortaları</h3>
-              <p class="brand-subtitle">Kasko, Trafik, Motosiklet Kasko</p>
+              <p class="brand-subtitle">Kasko, Trafik ve Filo Sigortaları</p>
             </div>
           </div>
 
@@ -172,13 +110,13 @@
           <div class="brand-card">
             <div class="brand-image">
               <img
-                src="assets/images/konut-sigortasi.jpg"
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                 alt="Konut Sigortaları"
               />
             </div>
             <div class="brand-overlay">
               <h3 class="brand-title">Konut Sigortaları</h3>
-              <p class="brand-subtitle">Evimi güvende</p>
+              <p class="brand-subtitle">Ev ve İşyeri Güvencesi</p>
             </div>
           </div>
 
@@ -186,13 +124,13 @@
           <div class="brand-card">
             <div class="brand-image">
               <img
-                src="assets/images/seyahat-sigortasi.jpg"
+                src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                 alt="Seyahat Sigortaları"
               />
             </div>
             <div class="brand-overlay">
               <h3 class="brand-title">Seyahat Sigortaları</h3>
-              <p class="brand-subtitle">Keyifli yolculuklar</p>
+              <p class="brand-subtitle">Güvenli Seyahatler</p>
             </div>
           </div>
 
@@ -200,13 +138,13 @@
           <div class="brand-card">
             <div class="brand-image">
               <img
-                src="assets/images/saglik-sigortasi.jpg"
+                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                 alt="Sağlık Sigortaları"
               />
             </div>
             <div class="brand-overlay">
               <h3 class="brand-title">Sağlık Sigortaları</h3>
-              <p class="brand-subtitle">Sağlığınız önceliğimiz</p>
+              <p class="brand-subtitle">Sağlık Güvencesi</p>
             </div>
           </div>
 
@@ -214,13 +152,13 @@
           <div class="brand-card">
             <div class="brand-image">
               <img
-                src="assets/images/isyeri-sigortasi.jpg"
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                 alt="İşyeri Sigortaları"
               />
             </div>
             <div class="brand-overlay">
               <h3 class="brand-title">İşyeri Sigortaları</h3>
-              <p class="brand-subtitle">İşyeri koruma altında</p>
+              <p class="brand-subtitle">İş Güvencesi</p>
             </div>
           </div>
 
@@ -228,22 +166,175 @@
           <div class="brand-card">
             <div class="brand-image">
               <img
-                src="assets/images/sorumluluk-sigortasi.jpg"
+                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
                 alt="Sorumluluk"
               />
             </div>
             <div class="brand-overlay">
               <h3 class="brand-title">Sorumluluk</h3>
-              <p class="brand-subtitle">Hukuki güvence</p>
+              <p class="brand-subtitle">Mali Mesuliyet</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Kurumsal Çözümler Section -->
+    <section class="kurumsal-cozumler-section">
+      <div class="container">
+        <h2 class="kurumsal-title">Kurumsal Çözümler</h2>
+        <div class="kurumsal-divider"></div>
+
+        <div class="kurumsal-grid">
+          <!-- Sol taraf - Büyük kart -->
+          <div class="kurumsal-main-card">
+            <h3 class="kurumsal-main-title">
+              İşletmeniz İçin<br />Tam Güvence
+            </h3>
+            <p class="kurumsal-main-desc">
+              İşletmenizin ihtiyaçlarına özel sigorta çözümleri ile riskleri
+              yönetin, geleceğe güvenle bakın.
+            </p>
+            <a href="kurumsal-cozumler.html" class="kurumsal-btn">
+              <span>Kurumsal Ürünler</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Sağ taraf - Kategoriler -->
+          <div class="kurumsal-categories">
+            <!-- İşyeri & Mülk -->
+            <div class="kurumsal-category">
+              <h4 class="category-title">İŞYERİ & MÜLK</h4>
+              <ul class="category-list">
+                <li>
+                  <a href="kurumsal-cozumler.html#isyeri-paket"
+                    >İşyeri Paket Sigortası</a
+                  >
+                </li>
+                <li>
+                  <a href="kurumsal-cozumler.html#yangin">Yangın & Kâr Kaybı</a>
+                </li>
+                <li>
+                  <a href="kurumsal-cozumler.html#hirsizlik"
+                    >Hırsızlık & Kasa</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Mühendislik & Sanayi -->
+            <div class="kurumsal-category">
+              <h4 class="category-title">MÜHENDİSLİK & SANAYİ</h4>
+              <ul class="category-list">
+                <li>
+                  <a href="kurumsal-cozumler.html#insaat">İnşaat All-Risk</a>
+                </li>
+                <li>
+                  <a href="kurumsal-cozumler.html#makine">Makine Kırılması</a>
+                </li>
+                <li>
+                  <a href="kurumsal-cozumler.html#elektronik"
+                    >Elektronik Cihaz</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Sorumluluk Sigortaları -->
+            <div class="kurumsal-category">
+              <h4 class="category-title">SORUMLULUK SİGORTALARI</h4>
+              <ul class="category-list">
+                <li>
+                  <a href="kurumsal-cozumler.html#isv-mali"
+                    >İşveren Mali Mesuliyet</a
+                  >
+                </li>
+                <li>
+                  <a href="kurumsal-cozumler.html#ucuncu-sahis"
+                    >3. Şahıs Sorumluluğu</a
+                  >
+                </li>
+                <li>
+                  <a href="kurumsal-cozumler.html#mesleki"
+                    >Mesleki Sorumluluk</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Nakliyat & Lojistik -->
+            <div class="kurumsal-category">
+              <h4 class="category-title">NAKLİYAT & LOJİSTİK</h4>
+              <ul class="category-list">
+                <li>
+                  <a href="kurumsal-cozumler.html#emtia">Emtia Nakliyat</a>
+                </li>
+                <li>
+                  <a href="kurumsal-cozumler.html#tasiyici"
+                    >Taşıyıcı Sorumluluk (FFL/CMR)</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Çalışan Yan Hakları -->
+            <div class="kurumsal-category">
+              <h4 class="category-title">ÇALIŞAN YAN HAKLARI</h4>
+              <ul class="category-list">
+                <li>
+                  <a href="kurumsal-cozumler.html#grup-saglik"
+                    >Grup Sağlık Sigortası</a
+                  >
+                </li>
+                <li>
+                  <a href="kurumsal-cozumler.html#bes"
+                    >Otomatik Katılım (BES)</a
+                  >
+                </li>
+                <li>
+                  <a href="kurumsal-cozumler.html#ferdi-kaza"
+                    >Grup Ferdi Kaza</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Filo & Diğer -->
+            <div class="kurumsal-category">
+              <h4 class="category-title">FİLO & DİĞER</h4>
+              <ul class="category-list">
+                <li>
+                  <a href="kurumsal-cozumler.html#filo">Filo Kasko & Trafik</a>
+                </li>
+                <li>
+                  <a href="kurumsal-cozumler.html#siber">Siber Güvenlik</a>
+                </li>
+                <li>
+                  <a href="kurumsal-cozumler.html#tekne">Tekne & Havacılık</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
     <!-- WhatsApp Button -->
     <a
-      href="https://wa.me/905xxxxxxxxx"
+      href="https://wa.me/905559992185"
       class="whatsapp-btn"
       target="_blank"
       aria-label="WhatsApp ile iletişime geç"
@@ -255,10 +346,10 @@
       </svg>
     </a>
 
-    <!-- Footer -->
-    <div id="footer-placeholder"></div>
-
     <!-- JavaScript -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="js/components.js"></script>
     <script src="js/mobile-menu-fix.js"></script>
     <script src="js/main.js"></script>
